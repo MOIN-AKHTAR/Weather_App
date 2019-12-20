@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Index Page</title>
+</head>
+
+<body>
+    <div id="Content">
+        <h1>Weather</h1>
+        {{>Header}}
+        <div class="Main_Content">
+            <div id="content">
+                <h2>Use this site to get your weather</h2>
+                <form>
+                    <input type="text" id="Location" placeholder="Find Your Location">
+                    <button>Search</button>
+                </form>
+                <section>
+                    <p id="LocationInput"></p>
+                    <p id="Detail"></p>
+                </section>
+            </div>
+        </div>
+        {{>Footer}}
+    </div>
+</body>
+<script src="/js/Script.js"></script>
+
+</html>
